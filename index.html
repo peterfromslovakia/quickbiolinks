@@ -1,29 +1,112 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peter Obala | Links</title>
-  <meta property="og:title" content="Peter Obala | Links" />
-  <meta property="og:description" content="Everything important in one place" />
-  <meta name="theme-color" content="#000000">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peter Obala</title>
+  <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1d1d1f" media="(prefers-color-scheme: dark)">
+  <style>
+    :root {
+      --bg-light: #f5f5f7;
+      --text-light: #1d1d1f;
+      --bg-dark: #1d1d1f;
+      --text-dark: #f5f5f7;
+      --accent: #007aff;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: var(--bg-dark);
+        color: var(--text-dark);
+      }
+    }
+
+    img.avatar {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      margin: 0.2rem 0;
+      font-size: 1.8rem;
+    }
+
+    p.subtext {
+      margin: 0.5rem 0 2rem;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .link-card {
+      background: white;
+      border-radius: 1rem;
+      padding: 1rem 1.5rem;
+      margin: 0.5rem auto;
+      max-width: 360px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .link-card a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.75rem;
+      color: #999;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .link-card {
+        background: #2c2c2e;
+      }
+      .link-card a {
+        color: #0a84ff;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial; background: #111; color: white; text-align: center; padding: 40px;">
-  <img src="https://avatars.githubusercontent.com/u/0?v=4" alt="avatar" style="width:120px; border-radius: 50%; margin-bottom: 20px;">
+<body>
+  <img src="https://avatars.githubusercontent.com/u/0?v=4" alt="Peter Obala" class="avatar" />
   <h1>Peter Obala</h1>
-  <p>Everything important in one place</p>
-  <div style="margin-top: 30px;">
-    <a href="https://github.com/peterfromslovakia" target="_blank" style="display:block; margin: 10px; color: cyan;">🌐 GitHub</a>
-    <a href="https://linkedin.com/in/peter-obala-311897350" target="_blank" style="display:block; margin: 10px; color: cyan;">💼 LinkedIn</a>
-    <a href="https://youtube.com/@peter_obala" target="_blank" style="display:block; margin: 10px; color: cyan;">🎥 YouTube</a>
-    <a href="https://instagram.com/peter_obala" target="_blank" style="display:block; margin: 10px; color: cyan;">📷 Instagram</a>
-    <a href="https://www.facebook.com/profile.php?id=100007997895856&locale=sk_SK" target="_blank" style="display:block; margin: 10px; color: cyan;">📘 Facebook</a>
-    <a href="https://peterfromslovakia.github.io/" target="_blank" style="display:block; margin: 10px; color: cyan;">🌐 Moja stránka</a>
-    <a href="https://www.tiktok.com/@peter_obala?is_from_webapp=1&sender_device=pc" target="_blank" style="display:block; margin: 10px; color: cyan;">🎵 TikTok</a>
-  </div>
-  <footer style="margin-top: 40px; font-size: 0.8em; color: #777;">
-    Built with ❤️ by Peter
+  <p class="subtext">Everything important in one place</p>
+
+  <div class="link-card"><a href="https://peterfromslovakia.github.io/" target="_blank">🌐 Moja stránka</a></div>
+  <div class="link-card"><a href="https://github.com/peterfromslovakia" target="_blank">🌐 GitHub</a></div>
+  <div class="link-card"><a href="https://linkedin.com/in/peter-obala-311897350" target="_blank">💼 LinkedIn</a></div>
+  <div class="link-card"><a href="https://youtube.com/@peter_obala" target="_blank">🎥 YouTube</a></div>
+  <div class="link-card"><a href="https://instagram.com/peter_obala" target="_blank">📷 Instagram</a></div>
+  <div class="link-card"><a href="https://www.facebook.com/profile.php?id=100007997895856&locale=sk_SK" target="_blank">📘 Facebook</a></div>
+  <div class="link-card"><a href="https://www.tiktok.com/@peter_obala?is_from_webapp=1&sender_device=pc" target="_blank">🎵 TikTok</a></div>
+
+  <footer>
+    Built with ❤️ in Apple-style
   </footer>
 </body>
 </html>
