@@ -30,13 +30,6 @@
       transition: all 0.3s ease;
     }
 
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: var(--bg-dark);
-        color: var(--text-dark);
-      }
-    }
-
     h1 {
       margin: 0.2rem 0;
       font-size: 2rem;
@@ -116,11 +109,21 @@
     }
 
     @media (prefers-color-scheme: dark) {
+      body {
+        background-color: var(--bg-dark);
+        color: var(--text-dark);
+      }
+
       .link-card {
         background: #2c2c2e;
       }
+
       .link-card a {
         color: #0a84ff;
+      }
+
+      h3 {
+        color: var(--text-dark); /* Oprava farby pre nadpisy v dark móde */
       }
     }
   </style>
