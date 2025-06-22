@@ -10,8 +10,8 @@
   <!-- Roboto font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome bez kľúča (CDN) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-MToJ4KNckpb/NTbQqG1VEdjUtrp9keghj7BQ6YqojVShlFg6SCfZFFJEKMK7LU+DAxC6xTrCkA9LgftKMuzO3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome ikony -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
 
   <style>
     :root {
@@ -25,7 +25,7 @@
     body {
       margin: 0;
       padding: 2rem;
-      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       background-color: var(--bg-light);
       color: var(--text-light);
       text-align: center;
@@ -41,23 +41,23 @@
 
     h1 {
       margin: 0.2rem 0;
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     p.subtext {
       margin: 0.5rem 0 2rem;
       color: #888;
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
 
     h3 {
       margin-top: 2.5rem;
-      font-size: 1.1rem;
-      font-weight: bold;
+      font-size: 1rem;
+      font-weight: 600;
     }
 
     .link-card {
-      background: #2c2c2e;
+      background: white;
       border-radius: 1rem;
       padding: 1rem 1.5rem;
       margin: 0.5rem auto;
@@ -66,13 +66,13 @@
       display: flex;
       align-items: center;
       gap: 0.8rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       transition: transform 0.2s ease, box-shadow 0.3s ease;
     }
 
     .link-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     }
 
     .link-card a {
@@ -80,17 +80,17 @@
       color: var(--accent);
       font-weight: 500;
       font-size: 1rem;
-      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     .link-card i {
       font-size: 1.2rem;
-      width: 24px;
-      text-align: center;
     }
 
     footer {
-      margin-top: 3rem;
+      margin-top: 2.5rem;
       font-size: 0.75rem;
       color: #999;
     }
@@ -104,6 +104,15 @@
       height: auto;
       margin-top: 1rem;
     }
+
+    @media (prefers-color-scheme: dark) {
+      .link-card {
+        background: #2c2c2e;
+      }
+      .link-card a {
+        color: #0a84ff;
+      }
+    }
   </style>
 </head>
 <body>
@@ -111,17 +120,17 @@
   <p class="subtext">Everything important in one place</p>
 
   <h3><i class="fas fa-user"></i> Personal links</h3>
-  <div class="link-card"><i class="fas fa-globe"></i><a href="https://peterfromslovakia.github.io/" target="_blank">My website</a></div>
-  <div class="link-card"><i class="fab fa-github"></i><a href="https://github.com/peterfromslovakia" target="_blank">GitHub</a></div>
-  <div class="link-card"><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/peter-obala-311897350" target="_blank">LinkedIn</a></div>
-  <div class="link-card"><i class="fab fa-youtube"></i><a href="https://youtube.com/@peter_obala" target="_blank">YouTube</a></div>
-  <div class="link-card"><i class="fab fa-instagram"></i><a href="https://instagram.com/peter_obala" target="_blank">Instagram</a></div>
-  <div class="link-card"><i class="fab fa-facebook"></i><a href="https://www.facebook.com/profile.php?id=100007997895856&locale=sk_SK" target="_blank">Facebook</a></div>
-  <div class="link-card"><i class="fab fa-tiktok"></i><a href="https://www.tiktok.com/@peter_obala?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a></div>
+  <div class="link-card"><a href="https://peterfromslovakia.github.io/" target="_blank"><i class="fas fa-globe"></i> My website</a></div>
+  <div class="link-card"><a href="https://github.com/peterfromslovakia" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+  <div class="link-card"><a href="https://linkedin.com/in/peter-obala-311897350" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></div>
+  <div class="link-card"><a href="https://youtube.com/@peter_obala" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></div>
+  <div class="link-card"><a href="https://instagram.com/peter_obala" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></div>
+  <div class="link-card"><a href="https://www.facebook.com/profile.php?id=100007997895856&locale=sk_SK" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></div>
+  <div class="link-card"><a href="https://www.tiktok.com/@peter_obala?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a></div>
 
   <h3><i class="fas fa-gamepad"></i> Gaming & Streaming</h3>
-  <div class="link-card"><i class="fab fa-youtube"></i><a href="https://www.youtube.com/channel/UC2AowsP2eskY7AN19VXwCKg" target="_blank">Gaming YouTube</a></div>
-  <div class="link-card"><i class="fab fa-twitch"></i><a href="https://www.twitch.tv/l3av3" target="_blank">Twitch</a></div>
+  <div class="link-card"><a href="https://www.youtube.com/channel/UC2AowsP2eskY7AN19VXwCKg" target="_blank"><i class="fab fa-youtube"></i> Gaming YouTube</a></div>
+  <div class="link-card"><a href="https://www.twitch.tv/l3av3" target="_blank"><i class="fab fa-twitch"></i> Twitch</a></div>
 
   <div class="qr-code">
     <p>Scan to visit this page:</p>
@@ -129,7 +138,7 @@
   </div>
 
   <footer>
-    Designed by me 😊 | Forked from <a href="https://github.com/mackenly/quickbiolinks" target="_blank">@mackenly</a>
+    Designed by me 😉 | Forked from <a href="https://github.com/mackenly/quickbiolinks" target="_blank">@mackenly</a>
   </footer>
 </body>
 </html>
