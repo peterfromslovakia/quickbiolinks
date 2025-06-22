@@ -6,7 +6,8 @@
   <title>Peter Obala</title>
   <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1d1d1f" media="(prefers-color-scheme: dark)">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- OPRAVENÝ LINK na Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-27aF+HeqdWUJZC+3v9s+pB1X4UjGvzz3NQ4MDOBuQ3SpR6ZZth6q4g3Tg0z8Btz0UGn+WBRei95fh5eGmFZJWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     :root {
       --bg-light: #f5f5f7;
@@ -66,19 +67,20 @@
     }
 
     .link-card i {
-      font-size: 1.2rem;
-      transition: color 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+      font-size: 1.3rem;
+      transition: color 0.3s ease, transform 0.3s ease, filter 0.3s ease, text-shadow 0.3s ease;
     }
 
     .link-card:hover {
-      transform: translateY(-4px) scale(1.01);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
     }
 
     .link-card:hover i {
       color: var(--accent);
-      filter: brightness(1.3);
-      transform: scale(1.2);
+      filter: brightness(1.4);
+      transform: scale(1.3);
+      text-shadow: 0 0 6px rgba(0,122,255,0.5);
     }
 
     .link-card a {
@@ -105,6 +107,7 @@
       width: 150px;
       height: auto;
       margin-top: 1rem;
+      filter: drop-shadow(0 0 8px rgba(0,0,0,0.1));
     }
 
     @media (prefers-color-scheme: dark) {
